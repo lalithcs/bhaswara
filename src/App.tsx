@@ -264,7 +264,7 @@ function App() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="w-48 h-12 bg-white/5 rounded flex items-center justify-center text-xl font-space font-bold">
-            <img src="src/ge.png" alt="Logo"  />
+            <img src="./src/ge.png" alt="Logo"  />
 
           </div>
           <motion.button
