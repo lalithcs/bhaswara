@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Ticket, Sparkles } from 'lucide-react';
 import logo from './ge.png';
+import byte from './posters/CSE/byte.png';
+import haunt from './posters/CSE/haunt.png';
 function App() {
   const sections = [
     {
@@ -10,13 +12,13 @@ function App() {
         {
           title: 'AI & Machine Learning',
           image:
-            'https://drive.google.com/uc?export=view&id=18yVc0Lk_78oiyN44c_4Uxh1XGYuOrxy_',
+            byte,
           desc: 'Deep dive into AI',
         },
         {
           title: 'Web Development',
           image:
-            'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80',
+            haunt,
           desc: 'Full-stack mastery',
         },
         {
