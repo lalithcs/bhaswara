@@ -4,8 +4,19 @@ import { ChevronLeft, ChevronRight, Ticket, Sparkles } from 'lucide-react';
 import logo from './ge.png';
 import byte from './posters/CSE/byte.png';
 import haunt from './posters/CSE/haunt.png';
+import overall from './posters/bhasov.jpg';
 function App() {
   const sections = [
+    {
+      name: 'Bhaswara 2025',
+      posters: [
+        {
+          title:'Welcome to Bhaswara 2025',
+          image:overall,
+          desc: 'Join us for an unforgettable experience filled with innovation, creativity, and excitement.',
+        }
+      ]
+    },
     {
       name: 'Dept of CSE',
       posters: [
