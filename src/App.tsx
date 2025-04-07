@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Ticket, Sparkles } from 'lucide-react';
-import logo from './ge.png';
+import logo from './geelo.png';
 import byte from './posters/CSE/byte.png';
 import haunt from './posters/CSE/haunt.png';
 import overall from './posters/bhasov.jpg';
+import postdept from './eventli';
 function App() {
   const sections = [
     {
       name: 'Bhaswara 2025',
       posters: [
         {
-          title:'Welcome to Bhaswara 2025',
-          image:overall,
+          title: 'Welcome to Bhaswara 2025',
+          image: overall,
           desc: 'Join us for an unforgettable experience filled with innovation, creativity, and excitement.',
         }
       ]
@@ -21,22 +22,20 @@ function App() {
       name: 'Dept of CSE',
       posters: [
         {
-          title: 'AI & Machine Learning',
-          image:
-            byte,
-          desc: 'Deep dive into AI',
+          title: 'Byte Busters',
+          image: byte,
+          desc: 'Code blindly',
         },
         {
-          title: 'Web Development',
-          image:
-            haunt,
-          desc: 'Full-stack mastery',
+          title: 'Haunt Hustlers',
+          image: haunt,
+          desc: 'Get ready to be spooked',
         },
         {
-          title: 'Blockchain',
+          title: 'The Final Move',
           image:
-            'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80',
-          desc: 'Crypto & Web3',
+            postdept.CSE.general[0],
+          desc: 'Choose your path wisely',
         },
       ],
     },
@@ -44,23 +43,29 @@ function App() {
       name: 'Dept of AIML',
       posters: [
         {
-          title: '24-Hour Coding Challenge',
+          title: 'Poster Presentation',
           image:
-            'https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&q=80',
-          desc: 'Code your way to victory',
+            postdept.CSE.AIML[2],
+          desc: 'Show your creativity',
         },
         {
-          title: 'IoT Innovation',
+          title: 'Debug The Dark',
           image:
-            'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80',
-          desc: 'Smart solutions',
+            postdept.CSE.AIML[0],
+          desc: 'Unravel the mystery',
         },
         {
-          title: 'Game Development',
+          title: 'Mystic Hustlers',
           image:
-            'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80',
-          desc: 'Create amazing games',
+            postdept.CSE.AIML[1],
+          desc: 'Solve the puzzle',
         },
+        {
+          title: 'Squidrift',
+          image:
+            postdept.CSE.AIML[3],
+          desc: 'Dive into the unknown',
+        }
       ],
     },
     {
@@ -278,7 +283,6 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="w-48 h-12 bg-white/5 rounded flex items-center justify-center text-xl font-space font-bold">
             <img src={logo} alt="Logo"  />
-
           </div>
           <motion.button
             onClick={handleRegister}
@@ -320,9 +324,30 @@ function App() {
         </motion.div>
       </section>
 
+      {/* Department Buttons */}
+      <div className="flex flex-wrap gap-4 justify-center mb-8">
+        {sections.map((section) => (
+          <button
+            key={section.name}
+            onClick={() =>
+              document
+                .getElementById(section.name.replace(/\s+/g, "-").toLowerCase())
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="px-4 py-2 bg-purple-700 hover:bg-purple-600 text-white rounded-xl transition font-medium"
+          >
+            {section.name}
+          </button>
+        ))}
+      </div>
+
       {/* Event Sections */}
       {sections.map((section) => (
-        <section key={section.name} className="py-16 border-t border-white/10">
+        <section
+          id={section.name.replace(/\s+/g, "-").toLowerCase()}
+          key={section.name}
+          className="py-16 border-t border-white/10"
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-space text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
               {section.name}
