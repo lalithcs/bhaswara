@@ -5,13 +5,14 @@ import postai from './posters/CSE AIML/postai.png';
 import squidai from './posters/CSE AIML/squidai.png';
 import funbyte from './posters/CSE DS/funbyte.png';
 import mystmar from './posters/CSE DS/mystmar.png';
+import squidds from './posters/CSE DS/squidds.png'; 
 import esccs from './posters/CSE-CS/esccs.png';
 import lcacs from './posters/CSE-CS/lcacs.png';
 import spycs from './posters/CSE-CS/spycs.png';
 import electamb from './posters/EEE/electamb.jpg';
 import enerhub from './posters/EEE/enerhu.jpg';
 import expoeee from './posters/EEE/expoeee.png';
-import posteee from './posters/EEE/posteee.jpg';
+import posteee from './posters/EEE/posteee.jpg';    
 import igni from './posters/MBA/igni.jpg'
 import markmast from './posters/MBA/markmast.jpg'
 import modmav from './posters/MBA/modmav.png'
@@ -29,7 +30,7 @@ const postdept = {
     CSE: {
         general: [finalm],
         AIML: [debdar, mysthus, postai, squidai],
-        DS: [funbyte, mystmar],
+        DS: [funbyte, mystmar, squidds],
         CS: [esccs, lcacs, spycs],
     },
     EEE: [electamb, enerhub, expoeee, posteee],

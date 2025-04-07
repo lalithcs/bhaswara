@@ -72,23 +72,29 @@ function App() {
       name: 'Dept of DS',
       posters: [
         {
-          title: 'Battle of Bands',
+          title: 'Fun Byte',
           image:
-            'https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&q=80',
-          desc: 'Rock the stage',
+            postdept.CSE.DS[0],
+          desc: 'Fun with data',
         },
         {
-          title: 'Dance Competition',
+          title: 'Mystery Marathon',
           image:
-            'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80',
-          desc: 'Show your moves',
+            postdept.CSE.DS[1],
+          desc: 'Solve the mystery',
         },
         {
-          title: 'Fashion Show',
+          title: 'Project Expo',
           image:
-            'https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&q=80',
-          desc: 'Walk the ramp',
+            postdept.CSE.DS[2],
+          desc: 'Showcase your projects',
         },
+        {
+          title: 'Squid Game',
+          image:
+            postdept.CSE.DS[3],
+          desc: 'Survive the game',
+        }
       ],
     },
     {
@@ -233,23 +239,41 @@ function App() {
       name: 'Dept of MBA',
       posters: [
         {
-          title: 'Poetry Slam',
+          title:'Ignite Ventures',
           image:
-            'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80',
-          desc: 'Express yourself',
+            postdept.MBA[0],
+          desc: 'Pitch your startup',
         },
         {
-          title: 'Creative Writing',
+          title: 'Market Masters',
           image:
-            'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80',
-          desc: 'Weave stories',
+            postdept.MBA[1],
+          desc: 'Master the market',
         },
         {
-          title: 'Debate',
+          title: 'Modern Maven',
           image:
-            'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80',
-          desc: 'Voice your opinion',
+            postdept.MBA[2],
+          desc: 'Innovate and inspire by being the Young Manager',
         },
+        {
+          title: 'Paper Presentation',
+          image:
+            postdept.MBA[3],
+          desc: 'Present your research',
+        },
+        {
+          title: 'Quiz Masters',
+          image:
+            postdept.MBA[4],
+          desc: 'Test your knowledge',
+        },
+        {
+          title: 'Poster Presentation',
+          image:
+            postdept.MBA[5],
+          desc: 'Showcase your creativity',
+        }
       ],
     },
   ];
@@ -365,7 +389,7 @@ function App() {
                   <img
                     src={section.posters[currentSlide[section.name] || 0].image}
                     alt={section.posters[currentSlide[section.name] || 0].title}
-                    className="w-full h-[600px] object-cover rounded-2xl shadow-2xl shadow-purple-500/20"
+                    className="w-full h-[800px] object-cover rounded-2xl shadow-2xl shadow-purple-500/20"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black to-transparent rounded-b-2xl">
                     <h3 className="font-space text-3xl font-bold mb-2">
