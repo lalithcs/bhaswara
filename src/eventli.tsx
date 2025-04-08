@@ -25,6 +25,9 @@ import great from './posters/CIVIL/great.jpg'
 import papercivil from './posters/CIVIL/papercivil.jpg'
 import postcivil from './posters/CIVIL/postcivil.jpg'
 import projcivil from './posters/CIVIL/projcivil.jpg'
+import goc from './posters/IT & IOT/GOC.jpg'
+import bgmi from './posters/IT & IOT/bgmi.jpg'
+import iotesc from './posters/IT & IOT/iotesc.png'
 
 const postdept = {
     CSE: {
@@ -36,5 +39,6 @@ const postdept = {
     EEE: [electamb, enerhub, expoeee, posteee],
     MBA: [igni, markmast, modmav, papermba, quizmba, postmba],
     CIVIL: [brain, draft, great, papercivil, postcivil, projcivil],
+    IT: [goc, bgmi, iotesc]
 };
 export default postdept;

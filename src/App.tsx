@@ -92,7 +92,7 @@ function App() {
         {
           title: 'Squid Game',
           image:
-            postdept.CSE.DS[3],
+            postdept.CSE.DS[2],
           desc: 'Survive the game',
         }
       ],
@@ -101,22 +101,22 @@ function App() {
       name: 'Dept of CS',
       posters: [
         {
-          title: 'Cricket Tournament',
+          title: 'Escape the Reality',
           image:
-            'https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&q=80',
-          desc: 'Battle on the field',
+            postdept.CSE.CS[0],
+          desc: 'Escape the room',
         },
         {
-          title: 'Basketball',
+          title: 'Lights Camera Action!',
           image:
-            'https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80',
-          desc: 'Shoot hoops',
+            postdept.CSE.CS[1],
+          desc: 'Capture the moment',
         },
         {
-          title: 'Chess',
+          title: 'Spy X Hacker',
           image:
-            'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80',
-          desc: 'Strategic warfare',
+            postdept.CSE.CS[2],
+          desc: 'Uncover the secrets',
         },
       ],
     },
@@ -124,22 +124,22 @@ function App() {
       name: 'Dept of IT & IOT',
       posters: [
         {
-          title: 'Valorant Tournament',
+          title: 'GOC 3.0',
           image:
-            'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80',
-          desc: 'Tactical shooting',
+            postdept.IT[0],
+          desc: 'Game of Cricket',
         },
         {
-          title: 'FIFA Championship',
+          title: 'Hunt for Glory',
           image:
-            'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&q=80',
-          desc: 'Virtual football',
+            postdept.IT[1],
+          desc:'Fight for your glory in BGMI',
         },
         {
-          title: 'PUBG Mobile',
+          title: 'IOT Escape Room',
           image:
-            'https://images.unsplash.com/photo-1580327344181-c1163234e5a0?auto=format&fit=crop&q=80',
-          desc: 'Battle royale',
+            postdept.IT[2],
+          desc: 'Escape the room',
         },
       ],
     },
