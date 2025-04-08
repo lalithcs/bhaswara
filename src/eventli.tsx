@@ -30,7 +30,12 @@ import projcivil from './posters/CIVIL/projcivil.jpg'
 import goc from './posters/IT & IOT/GOC.jpg'
 import bgmi from './posters/IT & IOT/bgmi.jpg'
 import iotesc from './posters/IT & IOT/iotesc.png'
-
+import assem from './posters/Mech/assem.jpg'
+import autoquiz from './posters/Mech/autoquiz.png'
+import expomech from './posters/Mech/expomech.png'
+import papermech from './posters/Mech/papermech.png'
+import postmech from './posters/Mech/postmech.png'
+import robo from './posters/Mech/robo.png'
 const postdept = {
     CSE: {
         general: [finalm],
@@ -41,6 +46,7 @@ const postdept = {
     EEE: [electamb, enerhu, expoeee, posteee,papereee,buzz],
     MBA: [igni, markmast, modmav, papermba, quizmba, postmba],
     CIVIL: [brain, draft, great, papercivil, postcivil, projcivil],
-    IT: [goc, bgmi, iotesc]
+    IT: [goc, bgmi, iotesc],
+    MECH: [assem,autoquiz,expomech,papermech,postmech,robo],
 };
 export default postdept;

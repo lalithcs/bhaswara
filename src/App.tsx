@@ -252,22 +252,40 @@ function App() {
       name: 'Dept of MECH',
       posters: [
         {
-          title: 'Photo Walk',
+          title: 'Assembling Disassembling',
           image:
-            'https://drive.google.com/file/d/18yVc0Lk_78oiyN44c_4Uxh1XGYuOrxy_/view?usp=sharing',
-          desc: 'Capture moments',
+            postdept.MECH[0],
+          desc: 'Fix the puzzle',
         },
         {
-          title: 'Portrait Contest',
+          title: 'Automobile Quiz',
           image:
-            'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80',
-          desc: 'Frame faces',
+            postdept.MECH[1],
+          desc: 'Dare to win',
         },
         {
-          title: 'Street Photography',
+          title: 'Project Expo',
           image:
-            'https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?auto=format&fit=crop&q=80',
-          desc: 'Urban stories',
+            postdept.MECH[2],
+          desc: 'Showcase your projects',
+        },
+        {
+          title: 'Paper Presentation',
+          image:
+            postdept.MECH[3],
+          desc: 'Present your research',
+        },
+        {
+          title: 'Poster Presentation',
+          image:
+            postdept.MECH[4],
+          desc: 'Present your creativity',
+        },
+        {
+          title: 'Robo Race',
+          image:
+            postdept.MECH[5],
+          desc: 'Race your cars and win!',
         },
       ],
     },
