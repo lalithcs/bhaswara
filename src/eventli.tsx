@@ -10,9 +10,11 @@ import esccs from './posters/CSE-CS/esccs.png';
 import lcacs from './posters/CSE-CS/lcacs.png';
 import spycs from './posters/CSE-CS/spycs.png';
 import electamb from './posters/EEE/electamb.jpg';
-import enerhub from './posters/EEE/enerhu.jpg';
+import enerhu from './posters/EEE/enerhu.jpg';
 import expoeee from './posters/EEE/expoeee.png';
-import posteee from './posters/EEE/posteee.jpg';    
+import posteee from './posters/EEE/posteee.jpg';   
+import papereee from './posters/EEE/papereee.jpg';
+import buzz from './posters/EEE/buzz.jpg'; 
 import igni from './posters/MBA/igni.jpg'
 import markmast from './posters/MBA/markmast.jpg'
 import modmav from './posters/MBA/modmav.png'
@@ -36,7 +38,7 @@ const postdept = {
         DS: [funbyte, mystmar, squidds],
         CS: [esccs, lcacs, spycs],
     },
-    EEE: [electamb, enerhub, expoeee, posteee],
+    EEE: [electamb, enerhu, expoeee, posteee,papereee,buzz],
     MBA: [igni, markmast, modmav, papermba, quizmba, postmba],
     CIVIL: [brain, draft, great, papercivil, postcivil, projcivil],
     IT: [goc, bgmi, iotesc]

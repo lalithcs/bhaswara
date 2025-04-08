@@ -46,7 +46,7 @@ function App() {
           title: 'Poster Presentation',
           image:
             postdept.CSE.AIML[2],
-          desc: 'Show your creativity',
+          desc: 'Bring out the talent in you and make creative posters!',
         },
         {
           title: 'Debug The Dark',
@@ -170,22 +170,40 @@ function App() {
       name: 'Dept of EEE',
       posters: [
         {
-          title: 'Startup Pitch',
+          title: 'Electric Tambola',
           image:
-            'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80',
-          desc: 'Present your ideas',
+            postdept.EEE[0],
+          desc: 'Play Tambola with Electric Symbols!',
         },
         {
-          title: 'Case Study',
+          title: 'Energy Hunt',
           image:
-            'https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80',
+            postdept.EEE[1],
           desc: 'Solve real problems',
         },
         {
-          title: 'Marketing Challenge',
+          title: 'Project Expo',
           image:
-            'https://images.unsplash.com/photo-1552664688-cf412ec27db2?auto=format&fit=crop&q=80',
-          desc: 'Create campaigns',
+            postdept.EEE[2],
+          desc: 'Showcase your projects',
+        },
+        {
+          title: 'Poster Presentation',
+          image:
+            postdept.EEE[3],
+          desc: 'Show your creativity',
+        },
+        {
+          title: 'Paper Presentation',
+          image:
+            postdept.EEE[4],
+          desc: 'Present your research',
+        },
+        {
+          title: 'Buzz Bar Game',
+          image:
+            postdept.EEE[5],
+          desc: 'Play for Joy!',
         },
       ],
     },
@@ -193,22 +211,40 @@ function App() {
       name: 'Dept of CIVIL',
       posters: [
         {
-          title: 'Robot Wars',
+          title: 'Brain Busters',
           image:
-            'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80',
-          desc: 'Battle of machines',
+            postdept.CIVIL[0],
+          desc: 'Cement your knowledge',
         },
         {
-          title: 'Line Following',
+          title: 'Draft it Right!',
           image:
-            'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80',
-          desc: 'Precision control',
+            postdept.CIVIL[1],
+          desc: 'Where ideas take shape',
         },
         {
-          title: 'Drone Racing',
+          title: 'The Great Search',
           image:
-            'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80',
-          desc: 'Sky high competition',
+            postdept.CIVIL[2],
+          desc: 'The fun starts where challenge begins!',
+        },
+        {
+          title: 'Paper Presentation',
+          image:
+            postdept.CIVIL[3],
+          desc: 'Present your research',
+        },
+        {
+          title: 'Poster Presentation',
+          image:
+            postdept.CIVIL[4],
+          desc: 'Show your creativity',
+        },
+        {
+          title: 'Project Expo',
+          image:
+            postdept.CIVIL[5],
+          desc: 'Showcase your projects',
         },
       ],
     },
