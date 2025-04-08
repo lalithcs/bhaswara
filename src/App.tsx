@@ -6,6 +6,9 @@ import byte from './posters/CSE/byte.png';
 import haunt from './posters/CSE/haunt.png';
 import overall from './posters/bhasov.jpg';
 import postdept from './eventli';
+import release from './posters/release.jpg';
+import release2 from './posters/release2.jpg';
+import release3 from './posters/release3.jpg';
 function App() {
   const sections = [
     {
@@ -14,6 +17,21 @@ function App() {
         {
           title: 'Welcome to Bhaswara 2025',
           image: overall,
+          desc: 'Join us for an unforgettable experience filled with innovation, creativity, and excitement.',
+        },
+        {
+          title: 'Welcome to Bhaswara 2025',
+          image: release,
+          desc: 'Join us for an unforgettable experience filled with innovation, creativity, and excitement.',
+        },
+        {
+          title: 'Welcome to Bhaswara 2025',
+          image: release2,
+          desc: 'Join us for an unforgettable experience filled with innovation, creativity, and excitement.',
+        },
+        {
+          title: 'Welcome to Bhaswara 2025',
+          image: release3,
           desc: 'Join us for an unforgettable experience filled with innovation, creativity, and excitement.',
         }
       ]
@@ -370,6 +388,19 @@ function App() {
           >
             <Ticket className="w-4 h-4" />
             Register Now
+          </motion.button>
+          
+          {/* New Button for Registration Fee Details */}
+          <motion.button
+            onClick={() =>
+              window.open('/src/rules.pdf', '_blank')
+            }
+            className="bg-white/10 backdrop-blur px-6 py-2 rounded-full font-space text-sm font-bold hover:bg-white/20 transition-all flex items-center gap-2 ml-4"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Ticket className="w-4 h-4" />
+            Fee Details & Rules
           </motion.button>
         </div>
       </header>
