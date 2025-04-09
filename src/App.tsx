@@ -9,6 +9,7 @@ import postdept from './eventli';
 import release from './posters/release.jpg';
 import release2 from './posters/release2.jpg';
 import release3 from './posters/release3.jpg';
+import rules from './rules.pdf';
 function App() {
   const sections = [
     {
@@ -393,7 +394,7 @@ function App() {
           {/* New Button for Registration Fee Details */}
           <motion.button
             onClick={() =>
-              window.open('/src/rules.pdf', '_blank')
+              window.open(rules, '_blank')
             }
             className="bg-white/10 backdrop-blur px-6 py-2 rounded-full font-space text-sm font-bold hover:bg-white/20 transition-all flex items-center gap-2 ml-4"
             whileHover={{ scale: 1.05 }}
