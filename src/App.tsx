@@ -84,6 +84,12 @@ function App() {
           image:
             postdept.CSE.AIML[3],
           desc: 'Dive into the unknown',
+        },
+        {
+          title: 'Tech Escape',
+          image:
+            postdept.CSE.AIML[4],
+          desc: 'Crack, Create, Conquer',
         }
       ],
     },
@@ -383,7 +389,7 @@ function App() {
           </div>
           <motion.button
             onClick={handleRegister}
-            className="bg-white/10 backdrop-blur px-6 py-2 rounded-full font-space text-sm font-bold hover:bg-white/20 transition-all flex items-center gap-2"
+            className="bg-white/10 backdrop-blur px-6 py-2 rounded-full font-space text-sm font-bold hover:bg-white/20 transition-all flex items-center gap-2 animate-pulse shadow-lg shadow-purple-500/50 glow-effect"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -431,6 +437,18 @@ function App() {
           <p className="font-poppins text-xl md:text-2xl mb-8 text-gray-300">
             Unleash Your Potential • Ignite Innovation • Create Memories
           </p>
+          {/* Centered Register Now button with glowing border */}
+          <div className="flex justify-center">
+            <motion.button
+              onClick={handleRegister}
+              className="bg-white/10 backdrop-blur px-6 py-2 rounded-full font-space text-sm font-bold hover:bg-white/20 transition-all flex items-center gap-2 animate-pulse shadow-lg shadow-purple-500/50 glow-effect border-4 border-purple-500"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Ticket className="w-4 h-4" />
+              Register Now
+            </motion.button>
+          </div>
         </motion.div>
       </section>
 

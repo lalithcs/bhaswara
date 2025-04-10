@@ -3,6 +3,7 @@ import debdar from './posters/CSE AIML/debdar.png';
 import mysthus from './posters/CSE AIML/mysthus.png';
 import postai from './posters/CSE AIML/postai.png';
 import squidai from './posters/CSE AIML/squidai.png';
+import teche from './posters/CSE AIML/teche.png';
 import funbyte from './posters/CSE DS/funbyte.png';
 import mystmar from './posters/CSE DS/mystmar.png';
 import squidds from './posters/CSE DS/squidds.png'; 
@@ -39,7 +40,7 @@ import robo from './posters/Mech/robo.png'
 const postdept = {
     CSE: {
         general: [finalm],
-        AIML: [debdar, mysthus, postai, squidai],
+        AIML: [debdar, mysthus, postai, squidai,teche],
         DS: [funbyte, mystmar, squidds],
         CS: [esccs, lcacs, spycs],
     },
